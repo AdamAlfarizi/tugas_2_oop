@@ -2,19 +2,17 @@
 
 
  class Mobil {
- 	public $nama,
- 	public $merk,
- 	public $warna,
- 	public $kecepatanMaksimal,
- 	public $jumlahPenumpang;
+ 	public $nama,$merk,$warna,$kecepatanMaksimal,$jumlahPenumpang;
 
  	public function_exists tambahKecepatan(){
-
- 	}
- 	public function_exists kurangiKecepatan(){
-
- 	}
- 	public function_exists gantiTraspormasi(){
- 		
+ 		return "Kecepatan bertambah ";
  	}
  } 
+ 
+ class MobilSport extends Mobil{
+ 	public $turbo = false;
+
+ 	public function jalankanTurbo(){
+ 		$this->"Turbo dijalankan";
+ 	}
+ }
